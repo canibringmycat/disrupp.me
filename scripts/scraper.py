@@ -16,3 +16,11 @@ def get_startup_names(site_url):
 	# startup_names = []
     return startup_names
 
+websites = ["http://yclist.com/", "http://angelpad.org/", "http://www.techstars.com/companies/"]
+
+complete_directory = []
+
+for website in websites:
+	curr_list = get_startup_names(website)
+	complete_directory.append(curr_list)
+
