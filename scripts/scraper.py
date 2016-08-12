@@ -24,6 +24,14 @@ for website in websites:
 	curr_list = get_startup_names(website)
 	complete_directory.append(curr_list)
 
+
+
 for start_up in complete_directory:
 	print(start_up)
+
+
+
+
+
+
 
