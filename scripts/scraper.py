@@ -21,8 +21,11 @@ websites = ["http://yclist.com/", "http://angelpad.org/", "http://www.techstars.
 complete_directory = []
 
 for website in websites:
-	curr_list = get_startup_names(website)
-	complete_directory.append(curr_list)
+	r = urllib2.urlopen(website).read()
+	soup = BeautifulSoup(r)
+	print(soup)
+	# curr_list = get_startup_names(website)
+	# complete_directory.append(curr_list)
 
 
 
