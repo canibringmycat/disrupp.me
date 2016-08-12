@@ -8,25 +8,24 @@ from urllib2 import urlopen
 # http://angelpad.org/
 # http://www.techstars.com/companies/
 
-def get_startup_names(site_url):
-	startup_names = []
-	html = urlopen(site_url).read()
-	# soup = BeautifulSoup(html, "lxml")
-	# container = soup.find("..., ...")
-	# startup_names = []
-    return startup_names
+# def get_startup_names(site_url):
+# 	startup_names = []
+# 	html = urlopen(site_url).read()
+# 	# soup = BeautifulSoup(html, "lxml")
+# 	# container = soup.find("..., ...")
+# 	# startup_names = []
+#     return startup_snames
 
 websites = ["http://yclist.com/", "http://angelpad.org/", "http://www.techstars.com/companies/"]
 
 complete_directory = []
 
 for website in websites:
-	r = urllib2.urlopen(website).read()
+	r = urlopen(website).read()
 	soup = BeautifulSoup(r)
 	print(soup)
 	# curr_list = get_startup_names(website)
 	# complete_directory.append(curr_list)
-
 
 
 for start_up in complete_directory:
