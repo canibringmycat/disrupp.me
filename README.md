@@ -4,8 +4,12 @@
 
 # App
 
-# Scripts
-- scraper.py  
-	a webscraper that uses BeautifulSoup 4 to compile existing startup names from several websites.
+# Preprocessing
+Data Preprocessing involves scraping seed-db for startup names and cleaning the
+company names so that it can be easily used by our markov chain. To run the
+preprocessor, simple navigate to the `preprocessing` folder and type in the
+following command: ```scrapy crawl seed_db -o items.json``` This will export
+all the company names, along with their link on the seed-db website into a json
+file named items.json
 
 a project by Antares Chen and Sam Choi
