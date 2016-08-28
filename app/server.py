@@ -1,5 +1,11 @@
+""" This file contains all web-app routes.
+
+August 27, 2016
+"""
+
 from flask import render_template, request
 from app import app
+
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -7,7 +13,6 @@ def index():
         return render_template('index.html')
     elif request.method == 'POST':
         pass
-
 
 @app.route('/about/')
 def about():
