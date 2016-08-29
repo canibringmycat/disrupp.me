@@ -20,4 +20,12 @@ scrapy crawl seed_db -o items.json
 
 This will export all the company names, along with their link on the seed-db website into a json file named items.json. Make sure to delete the json file everytime you rescrape the company names.
 
+
+# Input
+- hash the input (firstname, lastname)
+- use hash as seed for RNG
+
+
+
+
 a project by Antares Chen and Sam Choi
