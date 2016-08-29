@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- HTML file for disrupp.me about page.
+Sam Choi and Antares Chen
+Created: 8/28/16 -->
+
+<html lang="en">
+	<head>
+		<title>Disrupp Me - Startup Generator</title>
+		<!--   Icon   -->
+		<link rel="icon" href="../static/images/bigdata-cloud.ico">
+		<!--   CSS   -->
+    	<link rel="stylesheet" href="../static/css/style.css"/>
+        <link rel="stylesheet" href="../static/css/bootstrap-responsive.min.css"/>
+        <link rel="stylesheet" href="../static/css/bootstrap.min.css"/>
+        <script type="text/JavaScript">
+        function showMessage(){
+            var message1 = document.getElementById("firstname").value;
+            display_message.innerHTML= message1;
+            var message2 = document.getElementById("lastname").value;
+            display_message.innerHTML= message2;
+            var message3 = document.getElementById("industry").value;
+            display_message.innerHTML= message3;
+        }
+    </script>
+	</head>
+	<body>
+		<br><br><br><br><br><br>
+		<p>Welcome to Disrupp Me, the world's leading startup generator</p>
+		<p> \\  because every startup needs a start  // </p>
+		<br><br>
+		<form action="#" id="input-form" method="post">
+			First name:
+			<br>
+			<input type="text" name="firstname">
+			<br>
+			Last name:
+			<br>
+			<input type="text" name="lastname">
+			<br>
+			Industry:
+			<br>
+			<input type="text" name="industry">
+			<br><br><br>
+			<input type="submit" onclick="showMessage();" value="Disrupt">
+			<p><span id="message"></span></p>
+		</form>
+	</body>
+</html>
